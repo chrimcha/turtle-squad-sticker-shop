@@ -13,6 +13,11 @@ body{
     font-size: 50px;
 }
 
+.h2{
+    font-weight: 800;
+    font-size: 50px;
+}
+
 .h3{
     font-weight: bold;
     font-size: 30px;
@@ -21,6 +26,12 @@ body{
 .h4{
     font-weight: bold;
     font-style: 20px;
+}
+
+p{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 30px 0;
 }
 
 .wrapper{
@@ -55,7 +66,7 @@ body{
 }
 
 .character1{
-    background: url(img/Froaty\ Potion.png) no-repeat 0 0;
+    background: url(img/Froaty.png) no-repeat 0 0;
     background-size: 100%;
     width: 363px;
     height: 344px;
@@ -64,7 +75,7 @@ body{
 }
 
 .character2{
-    background: url(img/Grog\ Potion.png) no-repeat 0 0;
+    background: url(img/Grog.png) no-repeat 0 0;
     background-size: 100%;
     width: 309px;
     height: 371px;
@@ -72,7 +83,7 @@ body{
 }
 
 .character3{
-    background: url(img/Frotato\ Potion.png) no-repeat 0 0;
+    background: url(img/Frotato\ Stamp.png) no-repeat 0 0;
     background-size: 100%;
     width: 297px;
     height: 286px;
@@ -99,23 +110,61 @@ button.cta.alt{
     box-shadow: 0 0 0 10px rgba(0, 127, 255, .15);
 }
 
+nav{
+    height: 100px;
+    background-color: white;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, .2);
+    position: sticky;
+    top: 0;
+}
+
+nav .logo{
+    display: block;
+    width: 300px;
+    height: 40px;
+    position: absolute; top: 50%; left: 30px;
+    margin-top: -20px;
+    background: url(img/Turtle\ Squad\ Logo.png); no-repeat 0 0;
+    background-size: 100%;
+    overflow: hidden;
+    text-indent: -999px;
+}
+
+nav ul{
+    padding: 0;
+    margin:  0 20px 0 0;
+}
+
+nav ul li{
+    padding: 0;
+    margin: 0;
+    display: block;
+    float: right;
+}
+
+nav ul li a{
+    display: block;
+    height: 100%;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    padding: 35px 10px;
+    line-height: 30px;
+}
+
+.more-info{
+    text-align: center;
+}
 
 
 /* 
 
-<div class="hero-banner">
-        <div class="wrapper">
-            <h4>Christina from <a target="_blank" href="https://www.instagram.com/filmandyarn/">filmandyarn</a> presents</h4>
-            <h1>Cute Animal &amp;<br/>
-            Botanical Stickers<br/>
-            Made with <a target="_blank" href="https://assemble-entertainment.itch.io/sticky-business">Sticky Business</a>!</h1>
-            <h3>Welcome Froaty, Grog, &amp; Frotato.<br/>
-            Our new botanical animal friends!</h3>
-            <a class="cta alt" href="#more-info" >Read More</a>
-        </div>
-        <div class="character1"></div>
-        <div class="character2"></div>
-        <div class="character3"></div>
+<div class="more-info" id="more-info"> 
+        <h2>Join the Squad</h2>
+        <p><span class="highlight">New creations are made and posted weekly.</span> Sometimes we make a few, sometimes we just make one, but you can always look forward to a little of something within the week.</p>
+        <button class="cta">Sign Me Up!</button>
     </div>
 
 */

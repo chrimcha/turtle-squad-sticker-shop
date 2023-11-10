@@ -158,6 +158,22 @@ nav ul li a{
     text-align: center;
 }
 
+.more-info p{
+    margin-bottom: 18px 0 35px;
+}
+
+.more-info h2{
+    margin: 50px 0;
+}
+
+.highlight{
+    background-color: magenta;
+    color: gold;
+    padding: 5px 10px;
+    line-height: 50px;
+    display: inline;
+    font-weight: 800;
+}
 
 /* 
 

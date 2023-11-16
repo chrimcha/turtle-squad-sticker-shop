@@ -101,6 +101,14 @@ button.cta{
     padding: 20px 30px;
     border-radius: 10px;
     text-decoration: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+a.cta:active,
+button.cta:active{
+    opacity: .7;
 }
 
 a.cta.alt,
@@ -116,6 +124,7 @@ nav{
     box-shadow: 0 5px 8px rgba(0, 0, 0, .2);
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 nav .logo{
@@ -175,12 +184,119 @@ nav ul li a{
     font-weight: 800;
 }
 
+.sep{
+    width: 470px;
+    height: 10px;
+    background-color: black;
+    margin: 70px auto;
+}
+
+.story h3{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.nb-list{
+    width: 470px;
+    padding: 20px 20px 0 20px;
+    box-sizing: border-box;
+    background-color: #ededed;
+    float: left;
+    margin: 0 20px 20px 0;
+    position: relative;
+}
+
+.nb-list li{
+    height: 70px;
+    border-radius: 10px;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.nb-list li.salmon{background-color: salmon;}
+.nb-list li.grey{background-color: rgba(0, 0, 0, .1);}
+.nb-list li.purple{
+    background-color: purple;
+    color: black;
+}
+.nb-list li.gold{background-color: gold;}
+.nb-list li.peachpuff{background-color: peachpuff;}
+.nb-list li.magenta{background-color: magenta;}
+.nb-list li.lavender{background-color: lavender;}
+
+.nb-list li.dragging{
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    right: -30px;
+    transform: rotate(6deg);
+    box-shadow: 0 2px 14px rgba(0, 0, 0, .3);
+}
+
+.nb-list li.dragging:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 54px;
+    height: 60px;
+    background: url(img/dragging\ hand.png) no-repeat 0 0;
+    background-size: 100%;
+    bottom: -38px;
+    left: 60%;
+}
+
+
+.turtle-squad-shop-colors{
+    display: block;
+    margin: 0 auto;
+}
+
+footer{
+    text-align: center;
+    color: rgba(0, 0, 0, .4);
+    font-size: 15px;
+    margin: 85px 0 45px;
+    font-weight: bold;
+}
+
+footer a{
+    color: rgba(0, 0, 0, .4);
+}
+
+footer .wrapper{
+    width: 739px;
+    text-align: center;
+}
+
+.popup{
+    display: none;
+}
+
 /* 
 
-<div class="more-info" id="more-info"> 
-        <h2>Join the Squad</h2>
-        <p><span class="highlight">New creations are made and posted weekly.</span> Sometimes we make a few, sometimes we just make one, but you can always look forward to a little of something within the week.</p>
-        <button class="cta">Sign Me Up!</button>
+    <div class="sep"></div>
+    <div class="story" id="story">
+        <ul class="nb-list">
+            <li class="salmon">Planter Friends</li>
+            <li class="grey">&nbsp;</li>
+            <li class="purple">Potion Friends</li>
+            <li class="gold">Stamp Friends</li>
+            <li class="peach">Sticker Sheets</li>
+            <li class="magenta">Die Cut Stickers</li>       
+            <li class="lilac">Index Tabs</li>
+            <li class="gold">Washi Tapes</li>
+        </ul>
+        <h3>Left: Types of Stickers<br/>
+        Below: Our Story</h3>
+        <p>The team has always wanted to expand out creations into the wonderful world of stickers. Though it is not something that is probable for us at the moment, we still felt eager to pursue designing stickers here and there. </p>
+        <p>Thanks to the game Sticky Business, we are able to live out our sticker shop dreams by creating a digital sticker business within the game.</p>
+        <p>And so Turtle Squad was born into a sticker shop that serves the digital Sticky Business community.</p>
+        <p>We hope you love what we love to create!</p>
     </div>
+    <div class="sep"></div>
 
 */

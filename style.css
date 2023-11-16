@@ -274,29 +274,132 @@ footer .wrapper{
 
 .popup{
     display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2; /*2 to make appear above nav*/
+}
+
+.popup.show{
+    display: block;
+}
+
+.popup .blanket{
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.popup .content{
+    box-sizing: border-box;
+    padding: 30px 40px;
+    width: 960px;
+    height: 500px;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -250px;
+    margin-left: -480px;
+
+}
+
+.popup h2{
+    margin: 10px 0 20px;
+}
+
+.popup .cta{
+    margin-top: 40px;
+}
+
+.popup .close{
+    width: 80px;
+    height: 80px;
+    background: #FF3300 url(img/close\ icon.png) no-repeat center center;
+    background-size: 100%;
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    text-indent: -999px;
+    cursor: pointer;
+}
+
+.popup .row{
+
+}
+
+.popup .row::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.popup .item{
+    float: left;
+    width: 415px;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.popup .item:first-child{
+    margin-left: 0;
+}
+
+.popup .item label{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.popup .item input[type='text']{
+   display: block;
+   font-size: 30px;
+   font-weight: bold;
+   border: 4px solid #111111;
+   height: 70px;
+   box-sizing: border-box;
+   width: 100%;
+   padding: 15px 20px;
 }
 
 /* 
 
-    <div class="sep"></div>
-    <div class="story" id="story">
-        <ul class="nb-list">
-            <li class="salmon">Planter Friends</li>
-            <li class="grey">&nbsp;</li>
-            <li class="purple">Potion Friends</li>
-            <li class="gold">Stamp Friends</li>
-            <li class="peach">Sticker Sheets</li>
-            <li class="magenta">Die Cut Stickers</li>       
-            <li class="lilac">Index Tabs</li>
-            <li class="gold">Washi Tapes</li>
-        </ul>
-        <h3>Left: Types of Stickers<br/>
-        Below: Our Story</h3>
-        <p>The team has always wanted to expand out creations into the wonderful world of stickers. Though it is not something that is probable for us at the moment, we still felt eager to pursue designing stickers here and there. </p>
-        <p>Thanks to the game Sticky Business, we are able to live out our sticker shop dreams by creating a digital sticker business within the game.</p>
-        <p>And so Turtle Squad was born into a sticker shop that serves the digital Sticky Business community.</p>
-        <p>We hope you love what we love to create!</p>
+    <div class="popup">
+        <div class="blanket"></div>
+        <div class="content">
+            <h2>Fill In Your Details</h2>
+            <form action="">
+                <div class="item">
+                    <label>First Name</label>
+                    <input type="text" placeholder="Wordl Turtle" value="Peggy">
+                </div>
+                <div class="item">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Peggyton">
+                </div>
+                <div class="item">
+                    <label>Favorite Animal(s)</label>
+                    <input type="text" placeholder="Turtles &amp; Tortoises">
+                </div>
+                <div class="item">
+                    <label>Favorite Plant(s)</label>
+                    <input type="text" placeholder="Succulents &amp; Ferns">
+                </div>
+                <button class="cta">Join The Squad</button>
+            </form>
+            <button class="close">Close</button>
+        </div>
     </div>
-    <div class="sep"></div>
 
 */

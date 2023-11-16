@@ -27,7 +27,7 @@
     <nav>
         <a href="#" class="logo">Turtle Squad Sticker Shop</a>
         <ul>
-            <li><a href="#">Sign Up</a></li>
+            <li><a href="javascript:()" onclick="showPopup();">Sign Up</a></li>
             <li><a href="#story">Story</a></li>
             <li><a href="#more-info">More Info</a></li>
         </ul>
@@ -36,7 +36,7 @@
         <div class="wrapper">
             <h2>Join the Squad</h2>
             <p><span class="highlight">New creations are made and posted weekly.</span> Sometimes we make a few, sometimes we just make one, but you can always look forward to a little of something within the week.</p>
-            <button class="cta">Sign Me Up!</button>
+            <button class="cta" onclick="showPopup();">Sign Me Up!</button>
         </div>
     </div>
 
@@ -68,31 +68,38 @@
             This site was created during a <a target="_blank" title="Taken through Skillshare" href="https://www.skillshare.com/en/classes/The-Basics-of-Web-Design-Layout-Learn-How-To-Describe-Your-Design-With-HTML-CSS/1282829766?via=user-profile">Tap Tap Kaboom</a> class. &copy; filmandyarn 2023
         </div>
     </footer>
-    <div class="popup">
+    <div class="popup" id="popup">
         <div class="blanket"></div>
         <div class="content">
             <h2>Fill In Your Details</h2>
             <form action="">
-                <div class="item">
-                    <label>First Name</label>
-                    <input type="text" placeholder="Wordl Turtle" value="Peggy">
+                <div class="row">
+                    <div class="item">
+                        <label>First Name</label>
+                        <input type="text" placeholder="Wordl Turtle" value="Peggy">
+                    </div>
+                    <div class="item">
+                        <label>Last Name</label>
+                        <input type="text" placeholder="Peggyton">
+                    </div>
                 </div>
-                <div class="item">
-                    <label>Last Name</label>
-                    <input type="text" placeholder="Peggyton">
+                <div class="row">
+                    <div class="item">
+                        <label>Favorite Animal(s)</label>
+                        <input type="text" placeholder="Turtles &amp; Tortoises">
+                    </div>
+                    <div class="item">
+                        <label>Favorite Plant(s)</label>
+                        <input type="text" placeholder="Succulents &amp; Ferns">
+                    </div>
                 </div>
-                <div class="item">
-                    <label>Favorite Animal(s)</label>
-                    <input type="text" placeholder="Turtles &amp; Tortoises">
-                </div>
-                <div class="item">
-                    <label>Favorite Plant(s)</label>
-                    <input type="text" placeholder="Succulents &amp; Ferns">
-                </div>
-                <button class="cts">Join The Squad</button>
+                <button class="cta">Join The Squad</button>
             </form>
-            <button class="close">Close</button>
+            <button class="close" onclick="hidePopup();">Close</button>
         </div>
     </div>
+
+<script src="script.js" type="text/javascript"></script>
+
 </body>
 </html>
